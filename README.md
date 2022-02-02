@@ -1,4 +1,6 @@
 # React Native Animations
 A demonstration of different types of animation in React Native by a simple app 
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/31922733/152166732-38f46e8c-e1fe-4065-b1f4-686667be4b41.gif)
+
+https://user-images.githubusercontent.com/31922733/152167311-cbc3f8ad-e13c-4703-a623-a22fa0b8248c.mp4
+
