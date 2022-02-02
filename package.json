@@ -9,6 +9,7 @@
     "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
   },
   "dependencies": {
+    "@expo/vector-icons": "^12.0.5",
     "@react-navigation/drawer": "^6.2.0",
     "@react-navigation/native": "^6.0.7",
     "expo": "~44.0.2",

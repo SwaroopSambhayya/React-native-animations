@@ -7,7 +7,8 @@ import { TailwindProvider } from "tailwind-rn";
 import utilities from "./tailwind.json";
 import EasingTransition from "./src/screens/EasingTransition";
 import LayoutAnimation from "./src/screens/LayoutAnimation";
-import { Button, Text } from "react-native";
+import { Button, Text, TouchableOpacity } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
 
 const Drawer = createDrawerNavigator();
 export default function App() {
