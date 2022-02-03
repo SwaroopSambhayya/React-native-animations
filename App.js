@@ -9,15 +9,25 @@ import EasingTransition from "./src/screens/EasingTransition";
 import LayoutAnimation from "./src/screens/LayoutAnimation";
 import { Button, Text, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import TransitionAnimation from "./src/screens/transtionanimations/TransitionAnimation";
+import PanAnimations from "./src/screens/PanAnimations";
 
 const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
       <TailwindProvider utilities={utilities}>
-        <Drawer.Navigator screenOptions={{ drawerActiveTintColor: "#6366f1" }}>
+        <Drawer.Navigator
+          screenOptions={{ drawerActiveTintColor: "#6366f1" }}
+          initialRouteName="Transform Translate"
+        >
           <Drawer.Screen name="Easing" component={EasingTransition} />
-          <Drawer.Screen name="LayoutAnimation" component={LayoutAnimation} />
+          <Drawer.Screen name="Layout Animation" component={LayoutAnimation} />
+          <Drawer.Screen
+            name="Transform Translate"
+            component={TransitionAnimation}
+          />
+          <Drawer.Screen name="Pan Animation" component={PanAnimations} />
         </Drawer.Navigator>
       </TailwindProvider>
     </NavigationContainer>
