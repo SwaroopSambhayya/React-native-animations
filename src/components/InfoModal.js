@@ -52,7 +52,7 @@ const InfoModal = ({ showInfoModal, showInfo }) => {
             style={tw("w-full my-5 h-48")}
             resizeMode="contain"
           />
-          <Text style={tw("text-base text-justify pb-3 ")}>
+          <Text style={tw("text-base  pb-3 ")}>
             This Animated demonstration is powered by{" "}
             <TouchableOpacity
               onPress={() => {
