@@ -1,4 +1,4 @@
-import { TouchableOpacity, Button, ScrollView } from "react-native";
+import { TouchableOpacity, ScrollView } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
@@ -28,7 +28,7 @@ const TransitionAnimation = () => {
   }, []);
 
   return (
-    <ScrollView style={tw("flex")}>
+    <ScrollView style={tw("flex")} showsVerticalScrollIndicator={false}>
       <InfoModal showInfoModal={showInfoModal} showInfo={showInfo} />
       <Move />
       <Wobble />

@@ -67,7 +67,7 @@ const Move = () => {
   });
 
   return (
-    <View>
+    <View style={tw("my-5")}>
       <Animated.View
         style={[
           tw(" w-24 h-24  my-5  bg-indigo-500 rounded-lg"),
@@ -80,7 +80,9 @@ const Move = () => {
           boxSecondStyle,
         ]}
       />
-      <Button color={"#6366f1"} onPress={setOffset1} title="Move" />
+      <View style={tw("w-1/2 self-center my-3")}>
+        <Button color={"#6366f1"} onPress={setOffset1} title="Move" />
+      </View>
     </View>
   );
 };

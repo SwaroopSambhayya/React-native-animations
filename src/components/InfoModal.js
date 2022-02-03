@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   TouchableOpacity,
   Linking,
+  Pressable,
 } from "react-native";
 import React, { useCallback } from "react";
 import { useTailwind } from "tailwind-rn/dist";
@@ -52,37 +53,37 @@ const InfoModal = ({ showInfoModal, showInfo }) => {
             style={tw("w-full my-5 h-48")}
             resizeMode="contain"
           />
-          <Text style={tw("text-base  pb-3 ")}>
+          <Text style={tw("text-base  ")}>
             This Animated demonstration is powered by{" "}
-            <TouchableOpacity
+            <Text
               onPress={() => {
                 openLink(
                   "https://docs.swmansion.com/react-native-reanimated/docs/"
                 );
               }}
+              style={{
+                color: "#6365f1",
+                fontWeight: "600",
+                fontSize: 16,
+                padding: 2,
+              }}
             >
-              <Text
-                style={{
-                  color: "#6365f1",
-                  fontWeight: "600",
-                  fontSize: 16,
-                }}
-              >
-                Reanimated 2
-              </Text>
-            </TouchableOpacity>{" "}
+              Reanimated 2
+            </Text>{" "}
             and{" "}
-            <TouchableOpacity
+            <Text
               onPress={() => {
                 openLink("https://reactnative.dev/docs/layoutanimation");
               }}
+              style={{
+                color: "#6365f1",
+                fontWeight: "600",
+                fontSize: 16,
+                padding: 2,
+              }}
             >
-              <Text
-                style={{ color: "#6365f1", fontWeight: "600", fontSize: 16 }}
-              >
-                LayoutAnimation
-              </Text>
-            </TouchableOpacity>
+              LayoutAnimation
+            </Text>
           </Text>
         </View>
       </SafeAreaView>

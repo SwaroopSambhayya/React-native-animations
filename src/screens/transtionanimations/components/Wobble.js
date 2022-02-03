@@ -24,25 +24,27 @@ const Wobble = () => {
     };
   });
   return (
-    <View>
+    <>
       <Animated.View
         style={[
-          tw(" w-24 h-24 self-center my-5 bg-indigo-500 rounded-lg"),
+          tw(" w-24 h-24  self-center my-5 bg-indigo-500 rounded-lg"),
           wobbleStyle,
         ]}
       />
-      <Button
-        color={"#6366f1"}
-        title="Wobble"
-        onPress={() => {
-          rotate.value = withSequence(
-            withTiming(-10, { duration: 50 }),
-            withRepeat(withTiming(10, { duration: 100 }), 6, true),
-            withTiming(0, { duration: 50 })
-          );
-        }}
-      />
-    </View>
+      <View style={tw("w-1/2 my-3 self-center")}>
+        <Button
+          color={"#6366f1"}
+          title="Wobble"
+          onPress={() => {
+            rotate.value = withSequence(
+              withTiming(-10, { duration: 50 }),
+              withRepeat(withTiming(10, { duration: 100 }), 6, true),
+              withTiming(0, { duration: 50 })
+            );
+          }}
+        />
+      </View>
+    </>
   );
 };
 

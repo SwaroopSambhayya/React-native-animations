@@ -24,26 +24,28 @@ const Rotate = () => {
   });
 
   return (
-    <View>
+    <View style={tw("my-5")}>
       <Animated.View
         style={[
           tw(" w-24 h-24 self-center my-5 bg-indigo-500 rounded-lg"),
           rotate90,
         ]}
       />
-      <Button
-        color={"#6366f1"}
-        title="Rotate"
-        onPress={() => {
-          rotate2.value =
-            rotate2.value >= 1000
-              ? withTiming(45, { duration: 100, easing: Easing.bounce })
-              : withTiming(rotate2.value + 45, {
-                  duration: 500,
-                  easing: Easing.bounce,
-                });
-        }}
-      />
+      <View style={tw("w-1/2 my-3 self-center")}>
+        <Button
+          color={"#6366f1"}
+          title="Rotate"
+          onPress={() => {
+            rotate2.value =
+              rotate2.value >= 1000
+                ? withTiming(45, { duration: 100, easing: Easing.bounce })
+                : withTiming(rotate2.value + 45, {
+                    duration: 500,
+                    easing: Easing.bounce,
+                  });
+          }}
+        />
+      </View>
     </View>
   );
 };
