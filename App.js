@@ -16,7 +16,7 @@ export default function App() {
       <TailwindProvider utilities={utilities}>
         <Drawer.Navigator
           screenOptions={{ drawerActiveTintColor: "#6366f1" }}
-          initialRouteName="Pan Animation"
+          initialRouteName="Easing"
         >
           <Drawer.Screen name="Easing" component={EasingTransition} />
           <Drawer.Screen name="Layout Animation" component={LayoutAnimation} />
