@@ -7,7 +7,7 @@ import utilities from "./tailwind.json";
 import EasingTransition from "./src/screens/EasingTransition";
 import LayoutAnimation from "./src/screens/LayoutAnimation";
 import TransitionAnimation from "./src/screens/transtionanimations/TransitionAnimation";
-import PanAnimations from "./src/screens/PanAnimations";
+import PanAnimations from "./src/screens/pananimations/PanAnimations";
 
 const Drawer = createDrawerNavigator();
 export default function App() {

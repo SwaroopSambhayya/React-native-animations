@@ -3,9 +3,8 @@
     "name": "animation-example",
     "slug": "animation-example",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "orientation": "portrait",
+    "assetBundlePatterns": ["**/*"]
   },
   "name": "animation-example"
 }
