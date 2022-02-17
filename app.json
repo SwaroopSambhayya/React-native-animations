@@ -1,10 +1,27 @@
 {
   "expo": {
-    "name": "animation-example",
-    "slug": "animation-example",
+    "name": "Animate",
+    "slug": "Animate",
     "version": "1.0.0",
+    "description": "Animate is a app that explains and demonstartes how we can use animations in React Native using Reanimated 2 and Animation API",
     "orientation": "portrait",
-    "assetBundlePatterns": ["**/*"]
+    "assetBundlePatterns": ["**/*"],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain",
+      "image": "./assets/splash.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.swaroopsambhayya.Animate"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6365F1"
+      }
+    }
   },
-  "name": "animation-example"
+  "name": "Animate"
 }

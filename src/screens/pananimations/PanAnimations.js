@@ -26,7 +26,7 @@ const PanAnimations = () => {
     });
   }, []);
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <InfoModal showInfoModal={showInfoModal} showInfo={showInfo} />
       <SimpleGestureHandler />
       <ContinuousGestureHandler />
