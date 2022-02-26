@@ -18,6 +18,7 @@
     },
     "android": {
       "versionCode": 2,
+      "package": "com.animationexample",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#6365F1"
