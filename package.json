@@ -1,5 +1,7 @@
 {
   "main": "index.js",
+  "version": "1.0.1",
+  "name": "animate",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",

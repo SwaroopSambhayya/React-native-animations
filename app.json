@@ -5,7 +5,9 @@
     "version": "1.0.1",
     "description": "Animate is a app that explains and demonstartes how we can use animations in React Native using Reanimated 2 and Animation API",
     "orientation": "portrait",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "icon": "./assets/icon.png",
     "splash": {
       "backgroundColor": "#ffffff",
@@ -17,8 +19,7 @@
       "bundleIdentifier": "com.swaroopsambhayya.Animate"
     },
     "android": {
-      "versionCode": 2,
-      "package": "com.animationexample",
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#6365F1"
