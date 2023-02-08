@@ -2,6 +2,9 @@
 # React Native Animations
 A demonstration of different types of animation in React Native by a simple app 
 
+![Dribbble shot HD - 2](https://user-images.githubusercontent.com/31922733/217553662-9ba8cf12-0155-4ae8-adbb-6247da9347b1.png)
+
+
 ### Easing and Layout Animation
 
 https://user-images.githubusercontent.com/31922733/152167311-cbc3f8ad-e13c-4703-a623-a22fa0b8248c.mp4 
